@@ -11,7 +11,6 @@ RUN make build
 FROM alpine
 
 COPY --from=0  /go/frp/bin/frp* /bin/
-RUN ls -al /bin/frp*
 
 
 
